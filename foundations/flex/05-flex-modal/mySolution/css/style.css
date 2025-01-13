@@ -1,0 +1,106 @@
+html,body{
+    height: 100%;
+    background-color: grey;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.whole{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+.common{
+    margin: 10px 0px;
+}
+
+.circle{
+    color: royalblue;
+  font-size: 26px;
+  font-weight: 700;
+  background: lavender;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin:15px;
+}
+
+.text-styling{         
+    text-align: center;
+}
+
+.sidebar{
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: column;
+    height: inherit;
+}
+
+.branding-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    color: blue;
+    background-color: white;
+    border: 1px solid rgb(191, 186, 186);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px 0px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.cancel-icon{
+
+    background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 0;
+}
+

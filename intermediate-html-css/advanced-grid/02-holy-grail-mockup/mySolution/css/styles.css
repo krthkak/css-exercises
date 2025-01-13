@@ -1,0 +1,123 @@
+.container{
+    display: grid;
+    height: inherit;
+    grid-template: 0.50fr .25fr 3fr .25fr/ 1fr 4fr;
+    gap : 2px
+}
+
+* {
+    box-sizing: border-box;
+    height: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+li, ol{
+    list-style: none;
+}
+
+/* 4 rows and 2 columns */
+.container > * {
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: 1/1/2/3;
+    background-color: rgb(66, 78, 66);
+    color: white;
+}
+
+.header ul{
+    display : grid;
+    grid-template: 1fr/2fr repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.header li{
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.main{
+    grid-area: 3/2/4/3;
+    background-color: rgb(210, 229, 232);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fit,200px);
+    gap: 15px;
+    overflow: auto;
+
+}
+
+.article{
+    border: 1px solid rgb(194, 182, 182);
+    background-color: white;
+    display: grid;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    overflow:hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+h5{
+    text-align: center;
+}
+
+.nav{
+    grid-area: 2/2/3/3;
+    background-color: rgb(230, 46, 14);
+    display: grid;
+    grid-template:1fr / repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    gap: 15px;
+}
+
+.nav div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+    grid-area: 2/1/4/2;
+    background-color: rgb(226, 56, 17);
+    display: grid;
+    grid-template: repeat(4,1fr)/1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-item{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(194, 182, 182);
+    background-color: white;
+
+}
+
+.footer{
+    grid-area: 4/1/5/3;
+    background-color: rgb(56, 52, 52);
+    color: white;
+}
+
